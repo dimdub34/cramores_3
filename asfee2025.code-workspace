@@ -3,5 +3,10 @@
 		{
 			"path": "."
 		}
-	]
+	],
+	"settings": {
+		"markdown.marp.browser": "chrome",
+		"markdown.marp.exportType": "html",
+		"markdown.marp.pdf.outlines": "headings"
+	}
 }

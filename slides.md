@@ -4,127 +4,242 @@ title: Mobile common pool resources: Heterogeneity of marginal productivity and 
 theme: default
 paginate: true
 footer: CEE-M | CNRS
+math: mathjax
 ---
 
 # Managing Mobile Common Pool Resources
 
 ### Experimental Evidence on Property Rights and Productivity
-**Nicolas Quérou, Gabriel Bayle, Robbert-Jan Schaap, Mickael Beaud, Dimitri Dubois, Marc Willinger**  
+G. Bayle, **D. Dubois**, M. Beaud, M. Willinger & N. Quérou
 CEE-M, CNRS, Univ. Montpellier, INRAE, Institut Agro
+
+<img src="img/CEEM.png" height="150px">
 
 ---
 
-## Motivation
+## The CramoRes Project
 
-- How do property rights and productivity differences affect the management of common pool resources (CPRs)?
-- We study a dynamic, mobile CPR context with uneven productivity and resource dispersion.
-- Focus: consequences of **asymmetrical patch allocation** (1 vs. 2 players in productive areas).
+- **CramoRes** is an ANR-funded project  
+- Objective: study collective management of **mobile common-pool resources** in a **dynamic and spatially structured context**
+- Combines theoretical modeling, experimental economics and behavioral analysis
+
+---
+
+### Common Theoretical Framework
+
+- **Discrete spatial domain**: multiple patches (e.g. A and B)  
+- **Discrete time**, finite horizon
+- **Resource growth** is local 
+- **Resource mobility**: fraction of stock migrates between patches  
+- **Terminal condition**: unharvested resource is lost at the end
+
+> This framework derives from Costello, Quérou & Tomini (2015)  
+> *Partial Enclosure of the Commons*, JPubE
+
+---
+
+### Research questions
+
+- **Mobility**: How does the degree of inter-patch mobility affect management efficiency? *(Project 1)*  
+- **Governance structure**: Is it better to allocate rights to one or multiple managers? *(Project 2)*  
+- **Productivity asymmetry**: Should exclusive rights go to the most productive zones? *(Project 3)*  
+- **Risk**: What happens when a sudden shock (with some probability) redirects the resource flow permanently? *(Project 4)* 
+
+---
+
+## Focus on Project 3
+
+### Research question
+
+How should **exclusive vs. shared property rights** be allocated in environments with **heterogeneous resource productivity**?
+
+---
+
+### Examples
+
+- **Fisheries**  
+  Fish stocks move across exclusive economic zones.  
+  Should rich spawning areas be managed exclusively (e.g. ITQs) or collectively across borders?
+
+- **Transboundary groundwater**  
+  Aquifers recharge unevenly; water flows across regions.  
+  Should pumping rights be concentrated in high-recharge zones?
+
+- *Pastoral systems, Forests and wildlife corridors etc.*
+
+> ➤ Where should **exclusive rights** be allocated when **resources are mobile and productivity is uneven**?
+
+---
+
+## Property Rights and Productivity Allocation
+
+We isolate the effect of **productivity allocation**, keeping property rights fixed:
+
+- The **number of players per patch** defines the property regime:
+  - **1 player** → Exclusive rights
+  - **2 players** → Shared rights
+- These rights remain constant throughout the game (1A - 2B)
+
+We manipulate only the **location of high productivity**:
+
+- *$A_h$*: high productivity in **exclusive** patch (A)
+- *$B_h$*: high productivity in **shared** patch (B)
+
+> ➤ Do productive zones perform better under **exclusive or shared** management?
+
+---
+
+## Formal model
+
+- Two interconnected patches: **A** and **B**
+- Each patch has a renewable stock: $x_{i,t}$  
+- Players choose how much to harvest: $h_{i,t}$
+- **Resource dynamics** (growth and mobility):
+$$
+x_{i,t+1} = D_{ii} \cdot (1 + \alpha_i)(x_{i,t} - h_{i,t}) + D_{ji} \cdot (1 + \alpha_j)(x_{j,t} - h_{j,t})
+$$
+- $\alpha_i$: growth rate in patch *i*  
+- $D_{ii}$: retention, $D_{ji}$: migration from the other patch (dispersion)
+- Payoff: $\pi_{i,t} = p \cdot h_{i,t}$ (no harvest cost, $p=1$)
+
+---
+
+### Productivity
+
+- Patch productivity: $Q_i = D_{ii} \cdot (1 + \alpha_i)$
+- Productivity reflects *the marginal return from conserving one unit in a patch*
+
+
+| Productivity | Interpretation                        | Implication             |
+|-----------------------------------------------|--------------------------------------|--------------------------|
+| $Q_i > 1$                                      | Keeping the resource is more valuable | **Conserve** the resource |
+| $Q_i < 1$                                      | Extracting now is more profitable     | **Harvest immediately**  |
+
+---
+
+## Illustration (1/2)
+
+<img src="img/illustration_1.png" height="600px">
+
+---
+
+## Illustration (2/2)
+
+<img src="img/illustration_2.png" height="500px">
+
+---
+
+## Efficient vs. Strategic Extraction
+
+- The **efficient path** maximizes total payoff over time:
+  - Players should wait, let the resource grow, then harvest everything in the **last period**
+  - No extraction in $t < T$, full harvest in $t = T$
+
+- Under **decentralized (non-cooperative)** behavior:
+  - Players anticipate others' overharvesting
+  - Leads to **early and excessive extraction**
+
+> Strategic behavior creates an intertemporal dilemma  
+→ Extract early to preempt rivals and secure payoffs
+
+---
+
+## Impact of Productivity Allocation
+
+- When **high productivity** is managed by a **single player**:
+  - She can wait until the last round → behavior close to the efficient path
+
+- When high productivity is managed by **two players**:
+  - Lack of coordination → over-extraction from the start
+  - Externality affects the other patch through **resource mobility**
+
+---
+
+### Predicted outcome
+
+| Treatment | Behavior in high-prod. patch | Efficiency |
+|----------|-------------------------------|------------|
+| $A_h$ (exclusive) | Conservation until $t = T$ | Higher |
+| $B_h$ (shared)    | Early extraction            | Lower  |
+
+> ➤ **Exclusive rights** in high-productivity areas should lead to better resource management
 
 ---
 
 ## Experimental Setup
 
-- Laboratory experiment at LEEM (Montpellier)
-- N = 240 participants
+- Laboratory experiment
 - Between-subject design with 2 treatments:
-  - **Ah**: One player manages high-productivity patch A
-  - **Bh**: Two players manage high-productivity patch B
-- 8 periods per game
+  - $A_h$: high-productivity on patch A
+  - $B_h$: high-productivity on patch B
+- 8 rounds per game
+- N = 273 participants &ndash; $A_h$: 153, $B_h$: 120
+
+> *Control tasks: NLE, PGSM, GPS*
 
 ---
 
-## Game Mechanics
+## Parameters
 
-- Two zones: A and B
 - Initial stock: 10 units per patch
-- Harvest decision → Growth → Migration
-
-$$
-x_{i,t+1} = D_{ii} \cdot (1+\alpha_i) \cdot e_{i,t} + D_{ji} \cdot (1+\alpha_j) \cdot e_{j,t}
-$$
-
-- Payoffs: 0.70€ per unit harvested
+- $D_{ii}$ = 0.75 &ndash; **Retention**
+- $D_{ji}$ = 0.25 &ndash; **Dispersion**
+- $(1 + \alpha)_h$ = 1.6 &ndash; **High** productivity ($Q=1.6 \cdot 0.75 = 1.2$)
+- $(1 + \alpha)_l$ = 1.1 &ndash; **Low** productivity ($Q=1.1 \cdot 0.75 = 0.825$)
 
 ---
 
-## Decision Interface
+## Decision Interface (Player A)
 
-![decision_screen_placeholder](img/decision_screen.png)
+<img src="img/screenshot.png" height="400px">
 
 > Only the player's own slider determines their decision. The others simulate teammates' choices.
 
 ---
 
-## Treatments
+## Cumulative Harvest – Overall Efficiency
 
-| Treatment | High-productivity | Players | Growth | Q |
-|----------|-------------------|---------|--------|---|
-| **Ah**   | Zone A            | 1       | 1.6    | 1.2 |
-| **Bh**   | Zone B            | 2       | 1.6    | 1.2 |
+<img src="img/cumulative_harvest_stack.png" height="450px">
 
-- Low-productivity patch always has growth = 1.1 (Q = 0.825)
-- Migration: 25% from each zone to the other
+Total harvest is **higher in $A_h$** than in $B_h$ &ndash; *Mann-Whitney test p<0.05*
 
 ---
 
-## Main Hypothesis
+## Cumulative Harvest – Distribution by Patch
 
-> When the high-productivity patch is managed by one player (Ah), efficiency is higher than when it is managed by two players (Bh).
+<img src="img/cumulative_harvest_lines.png" height="400px">
 
-$$
-H_0: Y_{g,Ah} = Y_{g,Bh} \quad H_1: Y_{g,Ah} < Y_{g,Bh}
-$$
-
-- $Y_{g,x}$: Sum of absolute deviations from efficient harvest per group
+- Players in **Patch B** extract similar quantities in $A_h$ and $B_h$&ndash; *MW test p=0.663*
+- In $B_h$, the player in **Patch A** extracts much less than in $A_h$ &ndash; *MW test p<0.001*
 
 ---
 
-## Analysis Plan
+## Mixed Model
 
-- Shapiro-Wilk normality tests
-- Parametric (t-test) or non-parametric (Wilcoxon) comparisons
-- Additional analysis:
-  - Gini index for inequality
-  - Behavior of single player
-  - Role of trust, patience, reciprocity
+| ![](img/estimates_table.png) | <img src="img/estimated_marginal_means.png" width="650px"> |
+|:----------------------------:|:-------------------------------------:|
 
 ---
 
-## Efficiency – Results
+- **Intercept**: 2.85 units (p < 0.001) of harvest in treatment $A_h$, Patch A
 
-_📊 Insert here your graph comparing deviation from efficient path in Ah vs Bh_
+- **Treatment $B_h$**: −1.67 units (p < 0.001) → Lower harvest when high productivity moves to patch B
 
----
+- **Patch B**: No significant effect (p = 0.74)
 
-## Inequality – Results
+- **Treatment × Patch**: +1.31 units (p = 0.037) → Negative effect of treatment $B_h$ is **mitigated in patch B** (-1.67 + 1.31 = -0.36)
 
-_📊 Insert here your graph with Gini coefficients or payoff dispersion_
-
----
-
-## Single Player Behavior
-
-- Theory: Should wait until last period to harvest
-- Observation: Early extraction when B over-exploits
-- Interpretation: negative reciprocity or bounded rationality
-
----
-
-## Individual Preferences
-
-- Negative reciprocity ↔ retaliation
-- Trust ↔ conservation effort
-- Patience ↔ long-term resource preservation
-
-> Survey adapted from Falk et al. (2018)
+> ➤ The model suggests that treatment $B_h$ reduces harvest, but this effect is moderated in Patch B, where the reduction is less pronounced.
 
 ---
 
 ## Conclusion
 
-- Efficient management is more likely when high-productivity zones are managed by one player
-- Asymmetric property rights mitigate overexploitation spillovers
-- Social preferences and beliefs (trust, reciprocity) shape conservation behavior
+- Exclusive rights over high-productivity areas **improve overall efficiency**
+- Shared management leads to **early extraction and negative spillovers**
+- Property rights allocation must consider both **productivity** and **strategic incentives**
+
+> ➤ Insights for designing institutional arrangements in mobile CPRs
 
 ---
 
@@ -133,3 +248,27 @@ _📊 Insert here your graph with Gini coefficients or payoff dispersion_
 **Contact**: dimitri.dubois@umontpellier.fr  
 **Website**: [https://duboishome.info/dimitri](https://duboishome.info/dimitri)
 
+<img src="img/CEEM.png" height="200px">
+
+---
+
+## References (1/2)
+
+- Albers, H. J., & Robinson, E. J. Z. (2013). A review of the spatial economics of non-timber forest product extraction: implications for policy. Ecological Economics, 92, 87-95.
+- Costello, C., & Polasky, S. (2008). Optimal harvesting of stochastic spatial resources. Journal of Environmental Economics and Management, 56(1), 1-18.
+- Costello, C., Querou, N. & Tomini, A. (2015). Partial enclosure of the commons. Journal of Public Economics 121, 69-78.
+- Sanchirico, J. N., & Wilen, J. E. (1999). Bioeconomics of spatial exploitation in a patchy environment. Journal of Environmental Economics and Management, 37(2), 129-150.
+
+---
+
+## References (2/2)
+
+- Brozovic, N., Sunding, D. L., & Zilberman, D. (2010). On the spatial nature of the groundwater pumping externality. Resource and Energy Economics, 32(2), 154-164.
+- Pfeiffer, L., & Lin, C. Y. C. (2012). Groundwater pumping and spatial externalities in agriculture. Journal of Environmental Economics and Management, 64(1), 16-30.
+- Ostrom, E. (1990). Governing the Commons: The Evolution of Institutions for Collective Action. Cambridge University Press.
+
+---
+
+## Numerical Predictions
+
+<img src="img/predictions.png">

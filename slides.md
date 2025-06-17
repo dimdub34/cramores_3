@@ -235,9 +235,12 @@ Total harvest is **higher in $A_h$** than in $B_h$ &ndash; *Mann-Whitney test p<
 
 ## Conclusion
 
-- Exclusive rights over high-productivity areas **improve overall efficiency**
-- Shared management leads to **early extraction and negative spillovers**
-- Property rights allocation must consider both **productivity** and **strategic incentives**
+- **Exclusive rights** over high-productivity areas lead to better resource conservation and higher efficiency
+
+- **Shared management leads to early depletion** and propagates negative effects to neighboring patches via resource mobility.
+
+- Effective property rights design must account for **both ecological productivity and strategic behavior**
+
 
 > ➤ Insights for designing institutional arrangements in mobile CPRs
 
